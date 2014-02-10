@@ -1,0 +1,508 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+
+        <title>WordPress.com REST API</title>
+
+        <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+        <meta name="author" content="Hakim El Hattab">
+
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <link rel="stylesheet" href="css/reveal.min.css">
+        <link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+        <!-- For syntax highlighting -->
+        <link rel="stylesheet" href="lib/css/zenburn.css">
+
+        <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+        <script>
+            document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+        </script>
+
+        <!--[if lt IE 9]>
+        <script src="lib/js/html5shiv.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+
+        <div class="reveal">
+
+            <div class="slides">
+    <section>&nbsp;<h1 class="absolute-element" style="position: absolute; width: 779px; height: 121px; z-index: 4; left: 97px; top: 130px;">Using the REST API</h1>
+    <div class="absolute-element" style="position: absolute; width: 541px; height: 46px; z-index: 4; left: 223px; top: 398px;">With WordPress.com and Jetpack</div>
+</section>
+<section>
+    <h2>Justin Shreve</h2>
+    <div>
+        <br>
+    </div>
+    <div>
+        <br>
+    </div>
+    <div><img src="talk_images/gravatar.jpeg" width="200" height="200" /></div>
+    <div>
+        <br>
+    </div>
+    <div>
+        <br>
+    </div>
+    <div>http://justin.gs<div>
+    <div>@justinshreve</div>
+    <div>justin@automattic.com</div>
+</section>
+<section>
+    <section>
+        <h3>
+            <span style="font-size: 55.8px;">developer.wordpress.com</span>
+            <br>
+        </h3>
+    </section>
+    <section>
+        <h2><img src="talk_images/developer_wp_dotcom.png" /></h2>
+    </section>
+    <section>
+        <h2><img src="talk_images/developer_wp_dotcom_highlighted.png" /></h2>
+    </section>
+    <section><img src="talk_images/developer_wp_dotcom_myapps_highlighted.png" /></section>
+</section>
+<section>
+    <section>
+        <h2>
+            <span style="font-size: 75.96px;">What Can it do?</span>
+            <br>
+        </h2>
+    </section>
+    <section>
+        <h2>
+            <br>
+        </h2>
+        <div>User Info</div>
+        <div>
+            <br>
+        </div>
+        <div>Likes</div>
+        <div>
+            <br>
+        </div>
+        <div>Site Metadata</div>
+        <div>
+            <br>
+        </div>
+        <div>Create, Edit, Delete, Find, and View Posts</div>
+        <div>
+            <br>
+        </div>
+        <div>
+            <br>
+        </div>
+        <div>
+            <br>
+        </div>
+        <div>but wait, there's more...</div>
+    </section>
+    <section>
+        <h2>
+            <br>
+        </h2>
+        <div>Reblog</div>
+        <div>
+            <br>
+        </div>
+        <div>Create, Edit, Delete, Find, and View Comments</div>
+        <div>
+            <br>
+        </div>
+        <div>Taxonomy</div>
+        <div>
+            <br>
+        </div>
+        <div>Following</div>
+        <div>
+            <br>
+        </div>
+        <div>Freshly Pressed</div>
+        <div>
+            <br>
+        </div>
+        <div>and...</div>
+    </section>
+    <section>
+        <div>Notifications</div>
+    </section>
+</section>
+<section>
+    <h2>For all WordPress.com Blogs</h2>
+</section>
+<section>
+    <section>
+        <h2>But wait! I'm self-hosted :(</h2>
+    </section>
+    <section>
+        <h2>Don't Worry</h2>
+    </section>
+    <section>
+        <div><img src="talk_images/jetpack.png" /></div>
+        <div>
+            <br>
+        </div>
+        <div>Since 1.9</div>
+    </section>
+</section>
+<section>
+    <section>
+        <h2>So Who's using it?</h2>
+    </section>
+    <section>
+        <h2>Mobile Apps</h2>
+        <div><img src="talk_images/mobile_apps.jpg" /></div>
+    </section>
+    <section>
+        <h2>Windows 8 APp</h2>
+        <div><img src="talk_images/windows.png" /></div>
+    </section>
+    <section>
+        <h2>We are, Internally</h2>
+        <div><img src="talk_images/likes.png" /></div>
+        <div><img src="talk_images/likes_source.png" /></div>
+    </section>
+    <section>
+        <h2>We are, Internally</h2>
+        <div><img src="talk_images/notes.png" width="400"  /></div>
+        <div><img src="talk_images/notes_source.png" /></div>
+    </section>
+    <section>
+        <h2>Klout</h2>
+        <div><img src="talk_images/klout.png" /></div>
+    </section>
+    <section>
+        <h2>Pocket</h2>
+        <div><img src="talk_images/pocket.png" /></div>
+    </section>
+    <section>
+        <h2>Lots more In the pipeline...</h2>
+        <div>There are some cool integrations coming out soon.</div>
+    </section>
+</section>
+<section>
+    <h2>OK Already</h2>
+    <div>How?</div>
+</section>
+<section>
+    <section>
+        <h2>We register an application with wordpress.com</h2>
+    </section>
+    <section>
+        <h2>developer.wordpress.com/apps/</h2>
+        <div><img src="talk_images/my_apps.png" /></div>
+    </section>
+    <section>
+        <h2>Create an Application</h2>
+        <div><img src="talk_images/my_apps_create.png" /></div>
+    </section>
+    <section>
+        <h2>We get our client id, redirect url, and secret key</h2>
+        <div><img src="talk_images/manage_app.png" /></div>
+        <div>
+            <br>
+        </div>
+    </section>
+    <section>
+        <h2>Save them for later!</h2>
+        <code>$client_id = '1';</code> <br />
+        <code>$client_secret = '##############';</code><br />
+        <code>$redirect_url = 'http://example.com';</code>
+    </section>
+</section>
+<section>
+    <h2>pick the programming language you feel most comfortable with</h2>
+    <div>We'll use PHP</div>
+    <div>What did you expect?</div>
+</section>
+<section>
+    <section>
+        <h2>Handle Authentication</h2>
+        <div>OAuth2</div>
+        <div>
+            <br>
+        </div>
+        <div>authorization_code grant type<br>
+        </div>
+        <br>
+    </section>
+    <section>
+        <h3>developer.wordpress.com/docs/oauth2/</h3>
+    </section>
+    <section>
+        <h2>oauth2 endpoints</h2>
+        <div>https://public-api.wordpress.com/oauth2/authorize</div>
+        <div>https://public-api.wordpress.com/oauth2/token<br>
+        </div>
+    </section>
+    <section>
+        <h2>first step: Redirect</h2>
+        <div>https://public-api.wordpress.com/oauth2/authorize?client_id=<font color="#ff0000">your_client_id</font>&amp;redirect_uri=<font color="#ff0000">your_url</font>&amp;response_type=code<br>
+        </div>
+    </section>
+    <section>
+        <div><img src="talk_images/oauth_dialog.png" /></div>
+    </section>
+    <section>
+        <h2>You get a code!</h2>
+        <div>http://example.com/myapp/?code=<font color="#ff0000">cw9hk1xG9k</font>
+    </div>
+    <div>OK. What do I do?</div>
+</section>
+<section>
+    <h2>
+        <span style="font-size: 75.96px;">Exchange it for full access</span>
+        <br>
+    </h2>
+    <div><img src="talk_images/auth_code.png" /></div>
+</section>
+<section>
+    <h2>And you get some cool info in return...</h2>
+
+    <div><img src="talk_images/return_code.png" /></div>
+    <div><img src="talk_images/json_return_from_auth.png" /></div>
+</section>
+<section>
+    <h2>Save that token and site ID for later!</h2>
+    <code>$access_token = $secret->access_token;</code><br />
+    <code>$site_id = $secret->blog_id;</code>
+</section>
+</section>
+<section>
+<section>
+    <h2>Cool. So far my code just gives me a random string.</h2>
+
+    <div>Thanks, Justin.</div>
+</section>
+<section>
+    <h2>You're welcome.</h2>
+</section>
+</section>
+<section>
+    <section>
+
+        <h2>time to make your first api call</h2>
+        <div>aww</div>
+    </section>
+    <section>
+        <h2>
+            <span style="font-size: 75.96px;">""Who AM i?""</span>
+            <br>
+        </h2>
+    </section>
+    <section>
+        <h3>https://public-api.wordpress.com/rest/v1/me<br>
+        </h3>
+    </section>
+    <section>
+
+        <h2>BTW, You're not alone.</h2>
+
+
+        <div>http://developer.wordpress.com/docs/api/1/get/me/</div>
+
+        <div>http://developer.wordpress.com/contact/<br>
+        </div>
+    </section>
+    <section>
+
+        <h2>
+            <span style="font-size: 75.96px;">making the call</span>
+            <br>
+        </h2>
+
+        <div><img src="talk_images/me_call.png" /></div>
+    </section>
+    <section>
+        <div><img src="talk_images/me_response.png" /></div>
+    </section>
+</section>
+<section>
+
+    <h2>That's all there is to it</h2>
+</section>
+<section>
+
+    <h2>
+        <span style="font-size: 75.96px;">Give me a better example</span>
+        <br>
+    </h2>
+</section>
+<section>
+    <section>
+
+        <h2>List all the freshly pressed posts</h2>
+        <div>Let me "Like" Them</div>
+    </section>
+    <section>
+
+        <div><img src="talk_images/freshly_pressed.png" /></div>
+    </section>
+    <section>
+
+        <div>https://public-api.wordpress.com/rest/v1/freshly-pressed/<br>
+        </div>
+    </section>
+    <section>
+
+        <div><img src="talk_images/freshly_pressed_source.png" /></div>
+    </section>
+    <section>
+        <h2>
+
+        <div><img src="talk_images/freshly_pressed_response.png" /></div>
+    </section>
+    <section>
+
+        <div><img src="talk_images/loop_freshly.png" /></div>
+    </section>
+    <section>
+
+        <h2>Clicking ""Like"" Kicks off a call to the like endpoint</h2>
+
+        <div>https://public-api.wordpress.com/rest/v1/sites/$site/posts/$post_ID/likes/new<br>
+        </div>
+    </section>
+    <section>
+
+        <div><img src="talk_images/like_action.png" /></div>
+    </section>
+    <section>
+
+        <div><img src="talk_images/likes_response.png" /></div>
+    </section>
+</section>
+<section>
+    <section>
+
+        <h2>
+            <span style="font-size: 75.96px;">other things to know</span>
+            <br>
+        </h2>
+    </section>
+    <section>
+
+        <h2>
+            <span style="font-size: 75.96px;">You can make unauthenticated requests</span>
+            <br>
+        </h2>
+
+        <div>Get public information like site metadata and published posts.</div>
+    </section>
+    <section>
+        <h2>You don't have to do anything special for jetpack</h2>
+        <div>
+            <br>
+        </div>
+        <div>
+            <br>
+        </div>
+        <div>Jetpack blogs show up in the OAuth Dialog.</div>
+        <div>
+            <br>
+        </div>
+        <div>Jetpack blogs have a site ID. You just pass it in your normal calls.</div>
+    </section>
+  <section>
+        <h2>Developer Console</h2>
+        <div><img src="talk_images/dev_console.png" /></div>
+    </section>
+  <section>
+        <h2>Custom Post Types and Metadata Support</h2>
+        <div>If you use Jetpack and the REST API, you can easily support CPTs and Custom Meta.</div><br />
+        <div>http://wp.me/p2gHKz-OY</div><br />
+        <code>rest_api_allowed_post_types</code><br />
+        <code>rest_api_allowed_public_metadata</code>
+    </section>
+  <section>
+        <h2>Don't care about blogs? Just want login? Try WordPress.com Connect.</h2>
+        <div>https://developer.wordpress.com/docs/wpcc/</div><br />
+        <div><img src="talk_images/wpcc-button.png" /></div>
+    </section>
+</section>
+<section>
+    <h2>
+        <br>
+    </h2>
+    <h2>resources</h2>
+    <div>
+        <br>
+    </div>
+    <div>
+        <br>
+    </div>
+    <div>justin@automattic.com</div>
+    <div>developer@wordpress.com</div>
+    <div>
+        <br>
+    </div>
+    <div>http://developer.wordpress.com/docs/api/<br>
+    </div>
+    <div>http://developer.wordpress.com/contact/<br>
+    </div>
+    <div>http://developer.wordpress.com/blog/</div>
+</section>
+<section>
+
+    <h2>
+        <span>bonus: What's next?</span>
+        <br>
+    </h2>
+
+    <div>Implicit OAuth + Ability to use API from JS</div>
+    <div>Multiple Redirect URLs</div>
+    <div>Stats API</div>
+    <div>.... what else do you want to see?</div>
+</section>
+<section>
+
+    <h2>Q&amp;A + DIscussion</h2>
+
+    <div>AMA</div>
+</section>
+</div>
+
+
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.min.js"></script>
+
+        <script>
+
+            // Full list of configuration options available here:
+            // https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                controls: true,
+                progress: true,
+                history: true,
+                center: true,
+
+                theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+                transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+                // Optional libraries used to extend on reveal.js
+                dependencies: [
+                    { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                    { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                    { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+                    { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+                    // { src: 'plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
+                    // { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+                ]
+            });
+
+        </script>
+
+    </body>
+</html>
